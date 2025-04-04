@@ -33,12 +33,23 @@ var typingEffect = new typed(".typedText", {
 
 // -------scroll animation -------
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Typed.js
+    const typed = new Typed(".typedText", {
+        strings: ["Software Engineer", "Web Developer", "Graphic Designer"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+    });
+});
+
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
     reset: true,
 });
+
 
 sr.reveal(".featured-name", {delay: 100});
 sr.reveal(".text-info", {delay: 200});
@@ -72,16 +83,6 @@ const srRight = ScrollReveal({
 
 srRight.reveal(".skill", {delay: 100});
 srRight.reveal(".skill-box", {delay: 100});
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Initialize Typed.js
-    const typed = new Typed(".typedText", {
-        strings: ["Software Engineer", "Web Developer", "Graphic Designer"],
-        typeSpeed: 50, // Speed of typing
-        backSpeed: 25, // Speed of backspacing
-        loop: true,    // Loop the typing effect
-    });
-});
 
 // -------active link-------
 

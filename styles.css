@@ -203,15 +203,16 @@ body.dark #moon {
     font-size: 50px;
     font-weight: 600;
     margin-block: 20px;
-    color: #05200c;
+    color: #062e12;
     margin-bottom: 10px;
 }
 
 .typedText {
     font-family: sans-serif;
-    color: #05200c;
-    font-size: 8px;
+    color: #062e12;
+    font-size: 1.5rem;
     font-weight: 600;
+    display: inline-block;
     text-transform: capitalize;
 }
 
